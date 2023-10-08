@@ -1,0 +1,18 @@
+while [ true ]
+do
+echo "Enter a number :"
+read num
+if [ $num -le 0 ]
+then
+echo "Please enter positive number :"
+else
+i=1
+while [ $i -le 10 ]
+do
+mul=$[ $i * $num ]
+echo "$num * $i=$mul"
+i=$[ $i +1 ]
+done
+break
+fi
+done
